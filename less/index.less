@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -52,9 +52,58 @@ table {
 * {
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap');
+@main-color: #191970;
+@accent-color: #F0F8FF;
+@main-font: 'Roboto Condensed', sans-serif;
+@heading-font: 'Noto Sans', sans-serif;
+// mixins 
+.centre(){
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.border(){
+  border:2px dotted @accent-color;
+  padding:1%;
+}
 
 html, body {
 	height: 100%;
-	background-color: green;
+	max-width: 100%;
+	font-family: @main-font;
+	background-color: @accent-color;
+	color: @main-color;
+}
+h2{
+	font-family: @main-font;
+	font-size: 1.8rem;
+}
+nav{
+	border:1px solid red;
+	display:flex;
+	justify-content: flex-end;
+
+	a{
+		text-decoration: none;
+		color:black;
+	}
+}
+header{
+	height:20vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	h1{
+		font-family: @heading-font;
+		font-size: 2rem;
+	}
+	
+}
+.middle{
+	border:1px solid green;
+	display:flex;
+
 }
 
