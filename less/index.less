@@ -105,7 +105,7 @@ nav{
 		}
 	}
 	@media(max-width: 500px){
-
+		justify-content: space-evenly;
 	}
 
 }
@@ -120,7 +120,7 @@ header{
 	justify-content: space-around;
 
 	.photo{
-		// border:2px solid hotpink;
+		border:2px solid hotpink;
 		.widthpadding();
 		padding:2%;
 		max-height: 100%;
@@ -136,20 +136,30 @@ header{
 		}
 
 	.intro{
-		// border:2px solid purple;
+		border:2px solid purple;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
 		order:2;
 
+		@media(max-width: 500px){
+			display: flex;
+			justify-content: center;
+		}
+
 		h1{
-			// border:2px dotted red;
+			border:2px dotted red;
 			.widthpadding();
 			display:flex;
 			align-items: center;
 			justify-content: flex-start;
 			font-weight: 700;
 			font-size: 3rem;
+
+			@media(max-width: 500px){
+				display: flex;
+				justify-content: center;
+			}
 		}
 		#techjam{
 			.widthpadding();
@@ -177,11 +187,10 @@ header{
 			&:hover{
 				background-color: @font-color;
 				color:@accent-color;
+
+				
 			}
 		}
-	}
-	@media(max-width: 500px){
-		
 	}
 }
 .skills{
@@ -204,7 +213,12 @@ header{
 		}
 		p{
 			font-size: 1.2rem;
+
+			@media(max-width: 500px){
+				font-size: 1rem;
+			}
 		}
+		
 	}
 	.goodstuff{
 		// border: 3px solid hotpink;
@@ -241,6 +255,12 @@ header{
 	display:flex;
 	flex-wrap: wrap;
 
+	@media(max-width: 500px){
+		margin-top: 2%;
+		display: flex;
+		justify-content: center;
+	}
+
 	h2{
 		.widthpadding();
 		font-size: 1.6rem;
@@ -269,7 +289,7 @@ header{
 }
 .contactMe{
 	.widthpadding();
-	border:1px solid red;
+	// border:1px solid red;
 	background-color:@font-color;
 	color:@main-color;
 	display: flex;
@@ -278,12 +298,12 @@ header{
 
 		h2{
 			.widthpadding();
-			border:2px solid lime;
+			// border:2px solid lime;
 			display: flex;
 			justify-content: center;
 		}
 		a{
-			border:1px dotted purple;
+			// border:1px dotted purple;
 			display: flex;
 			text-decoration: none;
 			margin:2%;
