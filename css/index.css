@@ -206,7 +206,6 @@ header {
   justify-content: space-around;
 }
 header .photo {
-  border: 2px solid hotpink;
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -215,6 +214,12 @@ header .photo {
   justify-content: flex-start;
   order: 1;
 }
+@media (max-width: 500px) {
+  header .photo {
+    display: flex;
+    justify-content: center;
+  }
+}
 header .photo img {
   width: 230px;
   height: 240px;
@@ -222,7 +227,6 @@ header .photo img {
   border: 2px solid #548163;
 }
 header .intro {
-  border: 2px solid purple;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -235,19 +239,21 @@ header .intro {
   }
 }
 header .intro h1 {
-  border: 2px dotted red;
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   font-weight: 700;
   font-size: 3rem;
 }
 @media (max-width: 500px) {
   header .intro h1 {
+    padding: 2%;
+    justify-items: stretch;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
@@ -264,6 +270,14 @@ header .intro #sideproj {
   padding-bottom: 1%;
   padding-left: 2%;
   max-height: 100%;
+}
+@media (max-width: 500px) {
+  header .intro #sideproj {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+  }
 }
 header .intro .signup-button {
   border: 1px solid #548163;
@@ -290,6 +304,15 @@ header .intro .signup-button:hover {
   padding-top: 1%;
   padding-bottom: 1%;
 }
+@media (max-width: 500px) {
+  .skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .skills .listen {
   width: 40%;
   height: 100%;
@@ -312,6 +335,12 @@ header .intro .signup-button:hover {
 .skills .goodstuff {
   width: 40%;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .skills .goodstuff {
+    display: flex;
+    align-items: center;
+  }
 }
 .skills .goodstuff h2 {
   font-size: 1.6rem;
@@ -345,7 +374,7 @@ header .intro .signup-button:hover {
 }
 @media (max-width: 500px) {
   .workhist {
-    margin-top: 2%;
+    margin-top: 4%;
     display: flex;
     justify-content: center;
   }
