@@ -344,4 +344,33 @@ header .intro .signup-button:hover {
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
+  border: 1px solid red;
+  background-color: #548163;
+  color: #DBE5DE;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contactMe h2 {
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border: 2px solid lime;
+  display: flex;
+  justify-content: center;
+}
+.contactMe a {
+  border: 1px dotted purple;
+  display: flex;
+  text-decoration: none;
+  margin: 2%;
+  color: #DBE5DE;
+}
+.contactMe a:hover {
+  font-weight: bold;
+  color: #5EC2A8;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
 }

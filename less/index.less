@@ -104,6 +104,10 @@ nav{
 			color:@accent-color;
 		}
 	}
+	@media(max-width: 500px){
+
+	}
+
 }
 header{
 	// border: 2px solid lime;
@@ -176,6 +180,9 @@ header{
 			}
 		}
 	}
+	@media(max-width: 500px){
+		
+	}
 }
 .skills{
 	// border:1px solid red;
@@ -224,6 +231,9 @@ header{
 			}
 		}
 	}
+	@media(max-width: 500px){
+		
+	}
 }
 .workhist{
 	.widthpadding();
@@ -251,8 +261,42 @@ header{
 	  
 	  tr:nth-child(even) {
 		background-color: #E8F3F1;
+
 	  }
+	  @media(max-width: 500px){
+		
 	}
+}
 .contactMe{
 	.widthpadding();
+	border:1px solid red;
+	background-color:@font-color;
+	color:@main-color;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+		h2{
+			.widthpadding();
+			border:2px solid lime;
+			display: flex;
+			justify-content: center;
+		}
+		a{
+			border:1px dotted purple;
+			display: flex;
+			text-decoration: none;
+			margin:2%;
+			color:@main-color;
+
+
+			&:hover{
+				font-weight: bold;
+				color:@accent-color;
+			}
+		}
+}
+.copyright{
+	display: flex;
+	justify-content: center;
 }
